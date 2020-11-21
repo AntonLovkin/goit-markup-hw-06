@@ -367,18 +367,41 @@
           <label class="form-field">
             <span class="form-label">Имя</span>
             <input class="form-input" type="text" name="name" placeholder=" ">
+            <svg class="icon-input" width="12" height="12">
+              <use href="./images/sprite.svg#name-modal">
+              </use>
+            </svg>
           </label>
-          <svg class="icon-input" width="12" height="12">
-            <use href="./images/sprite.svg#name-modal">
-            </use>
-          </svg>
-          <label >
-            <textarea name="comment" rows="5" cols="45"
+          <label class="form-field">
+            <span class="form-label">Телефон</span>
+            <input class="form-input" name="name" type="tel" placeholder=" ">
+            <svg class="icon-input" width="12" height="12">
+              <use href="./images/sprite.svg#phone-modal">
+              </use>
+            </svg>
+          </label>
+          <label class="form-field">
+            <span class="form-label">Почта</span>
+            <input class="form-input" name="name" type="email" placeholder=" ">
+            <svg class="icon-input" width="12" height="12">
+              <use href="./images/sprite.svg#mail-modal">
+              </use>
+            </svg>
+            
+          </label>
+          
+          <label>
+            <span class="form-label">Комментарий</span>
+            <textarea class="form-input form-textarea" name="comment" rows="5" cols="45"
              placeholder="Введите текст"></textarea>
           </label>
+          <label class="modal-checkbox">
+            <input type="checkbox">Соглашаюсь с рассылкой и принимаю<a href="#">Условия договора</a>
+          </label>
+          <button class="send-btn">Отправить</button>
         </form>
       </div>
     </div>
         <script src="./js/modal.js"></script>
-  </body> style="height: 12px; width: 12px;"
+  </body> 
 </html>
