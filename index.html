@@ -360,7 +360,13 @@
 
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
-        <button class="modal-button" data-modal-close><img class="close-button" src="./images/Vector.svg" alt="x"></button>
+        <button class="modal-button" data-modal-close>
+          <svg class="close-button" width="12" height="12">
+            <use href="./images/sprite.svg#close-modal">
+            </use>
+          </svg>
+          <!-- <img class="close-button" src="./images/Vector.svg" alt="x"> -->
+        </button>
         <h2 class="modal-name">Оставьте свои данные, мы вам перезвоним</h2>
         <form class="form" autocomplete="off">
           <label class="form-field">
@@ -391,11 +397,11 @@
           
           <label>
             <span class="form-label">Комментарий</span>
-            <textarea class="form-input form-textarea" name="comment" rows="5" cols="45"
+            <textarea class="form-input form-textarea" name="comment" rows="6" cols="45"
              placeholder="Введите текст"></textarea>
           </label>
           <label class="modal-checkbox">
-            <input class="checkbox visually-hidden" type="checkbox" required>
+            <input class="checkbox visually-hidden" name="checkbox" type="checkbox" required>
             <span class="icon-checkbox"></span>
             Соглашаюсь с рассылкой и принимаю
             <a href="#"> Условия договора</a>
