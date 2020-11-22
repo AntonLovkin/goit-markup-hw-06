@@ -811,9 +811,11 @@ img {
 }
 
 .modal-checkbox {
-  display: block;
+  display: flex;
+  text-align: center;
+  align-items: center;
   margin-bottom: 30px;
-  margin-left: 16px;
+  margin-left: 14px;
 
   font-size: 14px;
   line-height: 1.71;
@@ -823,12 +825,14 @@ img {
 }
 .modal-checkbox a {
   color: var(--hover-text-color);
+  margin-left: 5px;
 }
 .checkbox {
   position: absolute;
 }
 .icon-checkbox {
   display: inline-block;
+  margin-right: 7px;
   height: 15px;
   width: 16px;
   border: 2px solid black;
