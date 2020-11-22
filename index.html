@@ -365,7 +365,7 @@
         <form class="form" autocomplete="off">
           <label class="form-field">
             <span class="form-label">Имя</span>
-            <input class="form-input" type="text" name="name" placeholder=" ">
+            <input class="form-input" name="name" type="text" placeholder=" ">
             <svg class="icon-input" width="12" height="12">
               <use href="./images/sprite.svg#name-modal">
               </use>
@@ -395,7 +395,10 @@
              placeholder="Введите текст"></textarea>
           </label>
           <label class="modal-checkbox">
-            <input type="checkbox">Соглашаюсь с рассылкой и принимаю<a href="#">Условия договора</a>
+            <input class="checkbox visually-hidden" type="checkbox">
+            <span class="icon-checkbox"></span>
+            Соглашаюсь с рассылкой и принимаю
+            <a href="#">Условия договора</a>
           </label>
           <button class="send-btn">Отправить</button>
         </form>
